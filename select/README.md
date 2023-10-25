@@ -2,9 +2,14 @@
 Database에서 데이터를 선택할 때 사용된다.
 
 ### 기본 문법
+
 ```sql
-SELECT column1, column2, ...
-FROM table_name;
+SELECT column1, column2,...columnN 
+FROM table_name
+[WHERE]
+[GROUP BY]
+[HAVING]
+[ORDER BY column(s) [ASC|DESC]]
 ```
 table_name : 데이터를 가져올 테이블명.<br>
 column1, column2 : 데이터를 가져올 테이블의 필드명들.<br>
@@ -23,3 +28,4 @@ SELECT * FROM Customer;
 ### Reference
 [SQL SELECT Statement](https://www.w3schools.com/sql/sql_select.asp)<br>
 [SQL Comments](https://www.w3schools.com/sql/sql_comments.asp)<br>
+[SELECT문 순서](https://www.tutorialsteacher.com/sql/sql-orderby)
