@@ -41,4 +41,4 @@ FLAVOR를 TOTAL_ORDER 기준으로 내림차순 정렬하고 TOTAL_ORDER가 같�
 
 ### Reference
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/133024)<br>
-[ORDER BY in SQL - GeeksforGeeks](https://www.geeksforgeeks.org/sql-order-by/)<br>
+[SQL ORDER BY Keyword](https://www.w3schools.com/sql/sql_orderby.asp)<br>
