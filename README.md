@@ -4,7 +4,7 @@
 
 Structured Query Language의 줄임말로, Database를 조작하거나 접근할 수 있게 해준다.<br>
 ANSI/ISO 표준이지만, 다른 버젼의 SQL이 많이 있다. (ex : MySQL, Oracle, ...)<br>
-하지만, ANSI 표준과 호환가능하게 SELECT, UPDATE, DELETE 등 최소한의 명령어는 지원해준다.<br>
+하지만, ANSI 표준과 호환가능하게 SELECT, INSERT, UPDATE, DELETE 등 최소한의 명령어는 지원해준다.<br>
 
 ### 공부하는 방법
 
