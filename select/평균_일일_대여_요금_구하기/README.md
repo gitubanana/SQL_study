@@ -57,6 +57,9 @@ DAILY_FEE의 평균을 출력하는 SQL문 작성.<br>
 - **동작 환경**
     MySQL 4.0부터
 
+### Alias
+[Alias](https://github.com/gitubanana/SQL_study/tree/main/select/12%EC%84%B8_%EC%9D%B4%ED%95%98%EC%9D%B8_%EC%97%AC%EC%9E%90_%ED%99%98%EC%9E%90_%EB%AA%A9%EB%A1%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0#alias)
+
 ### Reference
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/151136)<br>
 [SQL AVG() Function](https://www.w3schools.com/sql/sql_avg.asp)<br>
