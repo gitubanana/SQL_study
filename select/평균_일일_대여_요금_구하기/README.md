@@ -1,5 +1,5 @@
 ### 문제 간단 설명
-CAR_RENTAL_COMPAYN_CAR 테이블에서<br>
+CAR_RENTAL_COMPANY_CAR 테이블에서<br>
 CAR_TYPE이 'SUV'인<br>
 DAILY_FEE의 평균을 출력하는 SQL문 작성.<br>
 소수 첫 번째 자리에서 반올림하고, 칼럼명은 AVERAGE_FEE로 지정.<br>
