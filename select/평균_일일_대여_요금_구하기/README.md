@@ -74,6 +74,7 @@ DAILY_FEE의 평균을 출력하는 SQL문 작성.<br>
     ```
     
 - **동작 환경**
+
     MySQL 4.0부터
 
 ### Alias
