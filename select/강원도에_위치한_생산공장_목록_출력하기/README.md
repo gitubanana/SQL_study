@@ -3,11 +3,8 @@ FOOD_FACTORY 테이블에서 강원도에 위치한 FACTORY_ID, FACTORY_NAME, AD
 결과는 FACTORY_ID를 기준으로 오름차순 정렬<br>
 
 ### WHERE
-
-특정 조건을 만족하는 행(record)을 가져올 때 사용한다.
-
-- **기본 문법**
-    
+특정 조건을 만족하는 행(record)을 가져올 때 사용한다.<br>
+- **기본 문법**<br>
     ```sql
     SELECT column1, column2, ...
     FROM table_name
@@ -18,9 +15,8 @@ FOOD_FACTORY 테이블에서 강원도에 위치한 FACTORY_ID, FACTORY_NAME, AD
     💡 WHERE는 SELECT문에서만 사용하는 것이 아니라, UPDATE, DELETE 등에서도 사용된다.
     
     </aside>
-    
-- **예시**
-    
+
+- **예시**<br>
     ```sql
     SELECT * FROM Customers
     WHERE CustomerID > 80;
@@ -28,9 +24,8 @@ FOOD_FACTORY 테이블에서 강원도에 위치한 FACTORY_ID, FACTORY_NAME, AD
     -- Cutomers 테이블에서 가져오는데
     -- CutomerID가 80보다 큰 행(row)을 가져온다.
     ```
-    
-- **여러 연산자**
-    
+
+- **여러 연산자**<br>
     ```sql
     WHERE CustomerID = 80
     -- 80이랑 같을 때 (equal)
@@ -60,28 +55,21 @@ FOOD_FACTORY 테이블에서 강원도에 위치한 FACTORY_ID, FACTORY_NAME, AD
     WHERE City IN ('Paris','London')
     -- Paris 혹은 London인
     ```
-    
 
 ### LIKE 연산자
+`WHERE`에서 특정 패턴을 찾을 때 사용된다.<br>
+- **두 개의 wildcard**<br>
+    `%` 는 0개 이상의 문자를 뜻한다.<br>
+    `_` 는 1개의 문자를 뜻한다.<br>
 
-`WHERE`에서 특정 패턴을 찾을 때 사용된다.
-
-- **두 개의 wildcard**
-    
-    `%` 는 0개 이상의 문자를 뜻한다.
-    
-    `_` 는 1개의 문자를 뜻한다.
-    
-- **기본 문법**
-    
+- **기본 문법**<br>
     ```sql
     SELECT column1, column2, ...
     FROM table_name
     WHERE columnN LIKE pattern;
     ```
-    
-- **예시**
-    
+
+- **예시**<br>
     ```sql
     SELECT * FROM Customers
     WHERE city LIKE '%L%';
@@ -89,24 +77,18 @@ FOOD_FACTORY 테이블에서 강원도에 위치한 FACTORY_ID, FACTORY_NAME, AD
     -- Cutomers 테이블에서 가져오는데
     -- city가 L을 포함하고 있는 행을 가져온다.
     ```
-    
 
 ### IN 연산자
-
-`WHERE`에서 여러 값을 찾을 때 사용된다.
-
-`OR` 여러 개를 줄인 것인다.
-
-- **기본 문법**
-    
+`WHERE`에서 여러 값을 찾을 때 사용된다.<br>
+`OR` 여러 개를 줄인 것인다.<br>
+- **기본 문법**<br>
     ```sql
     SELECT column_name(s)
     FROM table_name
     WHERE column_name IN (value1, value2, ...);
     ```
-    
-- **예시**
-    
+
+- **예시**<br>
     ```sql
     SELECT * FROM Customers
     WHERE Country NOT IN ('Germany', 'France', 'UK');

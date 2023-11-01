@@ -28,4 +28,4 @@ SELECT * FROM Customer;
 ### Reference
 [SQL SELECT Statement](https://www.w3schools.com/sql/sql_select.asp)<br>
 [SQL Comments](https://www.w3schools.com/sql/sql_comments.asp)<br>
-[SELECT문 순서](https://www.tutorialsteacher.com/sql/sql-orderby)
+[SELECT문 순서](https://www.tutorialsteacher.com/sql/sql-orderby)<br>

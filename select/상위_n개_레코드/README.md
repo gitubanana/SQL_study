@@ -8,8 +8,7 @@
 
 </aside>
 
-- **SQL Server / MS Access Syntax**
-    
+- **SQL Server / MS Access Syntax**<br>    
     ```sql
     -- 기본 문법
     SELECT TOP number|percent column_name(s)
@@ -20,9 +19,8 @@
     SELECT TOP 3 *
     FROM Customers;
     ```
-    
-- **MySQL**
-    
+
+- **MySQL**<br>
     ```sql
     -- 기본 문법
     SELECT column_name(s)
@@ -34,9 +32,8 @@
     SELECT * FROM Customers
     LIMIT 3;
     ```
-    
-- **Oracle 12**
-    
+
+- **Oracle 12**<br>
     ```sql
     -- 기본 문법
     SELECT column_name(s)
@@ -48,9 +45,8 @@
     SELECT * FROM Customers
     FETCH FIRST 3 ROWS ONLY;
     ```
-    
-- **옛날 Oracle**
-    
+
+- **옛날 Oracle**<br>
     ```sql
     -- 기본 문법
     	-- order by 없이 사용할 때

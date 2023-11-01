@@ -6,20 +6,16 @@ DAILY_FEE의 평균을 출력하는 SQL문 작성.<br>
 
 ### 예약어 또는 특수 문자(공백, 하이픈...)을 문자 그대로 사용하고 싶을 때
 
-- **SQL Server, Azure SQL Database 등**
-    
-    `[]` 혹은 `""` 로 묶으면 된다.
-    
+- **SQL Server, Azure SQL Database 등**<br>
+    `[]` 혹은 `""` 로 묶으면 된다.<br>
     ```sql
     SELECT *
     FROM [My Table]      -- 특수문자(공백문자)와 예약어 포함.
     WHERE [order] = 10;  -- 예약어 포함.
     ```
     
-- **MySQL**
-    
-    `` ` ` `` (Back tick)으로 묶으면 된다.
-    
+- **MySQL**<br>
+    `` ` ` `` (Back tick)으로 묶으면 된다.<br>
     ```sql
     SELECT *
     FROM `My Table`      -- 특수문자(공백문자)와 예약어 포함.
@@ -27,21 +23,20 @@ DAILY_FEE의 평균을 출력하는 SQL문 작성.<br>
     ```
 
 ### AVG
-값이 숫자인 칼럼의 평균값을 반환한다.
+값이 숫자인 칼럼의 평균값을 반환한다.<br>
 
 <aside>
 💡 NULL은 무시된다.
 
 </aside>
 
-- **기본 문법**
-    
+- **기본 문법**<br>
     ```sql
     SELECT AVG(column_name)
     FROM table_name;
     ```
     
-- **예시**
+- **예시**<br>
     ```sql
     -- Alias와 함께 사용하는 예시.
     SELECT AVG(Price) AS `average price`
@@ -52,14 +47,11 @@ DAILY_FEE의 평균을 출력하는 SQL문 작성.<br>
     SELECT * FROM Products
     WHERE price > (SELECT AVG(price) FROM Products);
     ```
-    
 
 ### ROUND
-`MySQL`이 제공하는 함수로,
-
-숫자를 특정 소수점 자리까지 반올림한다.
-
-- **기본 문법**
+`MySQL`이 제공하는 함수로,<br>
+숫자를 특정 소수점 자리까지 반올림한다.<br>
+- **기본 문법**<br>
     ```sql
     ROUND(number, decimals)
     -- number(반올림될 숫자) -> 필수
@@ -67,18 +59,17 @@ DAILY_FEE의 평균을 출력하는 SQL문 작성.<br>
     --    생략 시 -> 정수로 반올림됨.
     ```
     
-- **예시**
+- **예시**<br>
     ```sql
     SELECT ProductName, Price, ROUND(Price, 1) AS RoundedPrice
     FROM Products;
     ```
     
-- **동작 환경**
-
+- **동작 환경**<br>
     MySQL 4.0부터
 
 ### Alias
-[Alias](https://github.com/gitubanana/SQL_study/tree/main/select/12%EC%84%B8_%EC%9D%B4%ED%95%98%EC%9D%B8_%EC%97%AC%EC%9E%90_%ED%99%98%EC%9E%90_%EB%AA%A9%EB%A1%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0#alias)
+[Alias](https://github.com/gitubanana/SQL_study/tree/main/select/12%EC%84%B8_%EC%9D%B4%ED%95%98%EC%9D%B8_%EC%97%AC%EC%9E%90_%ED%99%98%EC%9E%90_%EB%AA%A9%EB%A1%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0#alias)<br>
 
 ### Reference
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/151136)<br>

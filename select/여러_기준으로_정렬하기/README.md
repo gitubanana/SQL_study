@@ -9,4 +9,4 @@ NAME이 같은 경우는 DATETIME 순으로 정렬<br>
 [ORDER BY](https://github.com/gitubanana/SQL_study/blob/main/select/%EC%9D%B8%EA%B8%B0%EC%9E%88%EB%8A%94_%EC%95%84%EC%9D%B4%EC%8A%A4%ED%81%AC%EB%A6%BC/README.md#order-by)<br>
 
 ### Reference
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/59404)
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/59404)<br>
