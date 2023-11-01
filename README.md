@@ -7,10 +7,12 @@ ANSI/ISO 표준이지만, 다른 버젼의 SQL이 많이 있다. (ex : MySQL, Or
 ### SQL 기본 문법
 
 - **SQL 키워드 대소문자**
+
     SQL 키워드는 대소문자를 구분하지 않는다. (case insensitive)<br>
     `select` 와 `SELECT` 는 똑같다.<br>
     
 - **세미콜론**
+
     대부분의 DB 시스템에서 SQL문 마지막에 `;` 를 써야한다.<br>
     SQL문 마지막에 `;` 을 쓰는 것이 표준이다.<br>
     ```sql
@@ -19,6 +21,7 @@ ANSI/ISO 표준이지만, 다른 버젼의 SQL이 많이 있다. (ex : MySQL, Or
     ```
     
 - **중요한 SQL 명령어**
+
     `SELECT` - DB에서 데이터 추출<br>
     `UPDATE` - DB에 데이터 갱신<br>
     `DELETE` - DB에서 데이터 삭제<br>
