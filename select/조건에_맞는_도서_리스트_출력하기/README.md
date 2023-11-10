@@ -38,6 +38,37 @@ BOOK_ID와 PUBLISHED_DATE를 출력하는 SQL문 작성.<br>
 - **동작 환경**<br>
     MySQL 4.0부터
 
+### YEAR/MONTH/DAY
+`MySQL` 함수로,<br>
+각각 날짜에서 연도, 월, 일을 추출하는 함수다.<br>
+- **기본 문법**<br>
+    ```sql
+    /* date : 날짜(필수) */
+    
+    YEAR(date)
+    -- date의 연도를 반환한다.(1000~9999)
+    
+    MONTH(date)
+    -- date의 월을 반환한다.(1~12)
+    
+    DAY(date)
+    -- date의 일을 반환한다.(1~31)
+    ```
+- **기본 문법**<br>
+    ```sql
+    SELECT NAME FROM FRIENDS
+    	WHERE MONTH(BIRTH_DATE) = 2
+    				AND DAY(BIRTH_DATE) = 29
+    -- FRIENDS 테이블에서
+    -- BIRTH_DATE가 2월 29일인
+    -- NAME을 가져온다.
+    ```
+- **동작 환경**<br>
+    MySQL 4.0부터
+
 ### Reference
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/144853)<br>
 [MySQL DATE_FORMAT() Function](https://www.w3schools.com/sql/func_mysql_date_format.asp)<br>
+[MySQL YEAR() Function](https://www.w3schools.com/sql/func_mysql_year.asp)<br>
+[MySQL MONTH() Function](https://www.w3schools.com/sql/func_mysql_month.asp)<br>
+[MySQL DAY() Function](https://www.w3schools.com/sql/func_mysql_day.asp)<br>
