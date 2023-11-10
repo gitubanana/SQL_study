@@ -58,7 +58,7 @@ BOOK_ID와 PUBLISHED_DATE를 출력하는 SQL문 작성.<br>
     ```sql
     SELECT NAME FROM FRIENDS
     	WHERE MONTH(BIRTH_DATE) = 2
-    				AND DAY(BIRTH_DATE) = 29
+    		AND DAY(BIRTH_DATE) = 29
     -- FRIENDS 테이블에서
     -- BIRTH_DATE가 2월 29일인
     -- NAME을 가져온다.
