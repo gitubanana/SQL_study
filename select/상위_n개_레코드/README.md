@@ -49,15 +49,15 @@
 - **옛날 Oracle**<br>
     ```sql
     -- 기본 문법
-    	-- order by 없이 사용할 때
-    	SELECT column_name(s)
-    	FROM table_name
-    	WHERE ROWNUM <= number;
-    	
-    	-- order by와 함께 사용할 때
-    	SELECT *
-    	FROM (SELECT column_name(s) FROM table_name ORDER BY column_name(s))
-    	WHERE ROWNUM <= number;
+    -- order by 없이 사용할 때
+    SELECT column_name(s)
+    FROM table_name
+    WHERE ROWNUM <= number;
+    
+    -- order by와 함께 사용할 때
+    SELECT *
+    FROM (SELECT column_name(s) FROM table_name ORDER BY column_name(s))
+    WHERE ROWNUM <= number;
     
     -- 예시
     SELECT * FROM Customers
