@@ -1,4 +1,8 @@
 ### 문제 간단 설명
+ONLINE_SALE 테이블에서<br>
+동일한 회원이 동일한 상품을 재구매한 데이터를 구하여,<br>
+USER_ID와 PRODUCT_ID를 출력하는 SQL문을 작성<br>
+결과는 PRODUCT_ID를 기준으로 오름차순 정렬해주시고 회원 ID가 같다면 USER_ID를 기준으로 내림차순 정렬<br>
 
 ### GROUP BY
 같은 값을 가지고 있는 행을 묶는다.<br>
