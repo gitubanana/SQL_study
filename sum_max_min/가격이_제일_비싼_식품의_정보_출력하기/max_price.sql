@@ -1,0 +1,11 @@
+SELECT *
+    FROM FOOD_PRODUCT
+    ORDER BY PRICE DESC
+    LIMIT 1;
+
+-- 여러 줄 주석은 아래같이 할 수 있다.
+/*
+SELECT *
+    FROM FOOD_PRODUCT
+    WHERE PRICE = (SELECT MAX(PRICE) FROM FOOD_PRODUCT);
+*/
