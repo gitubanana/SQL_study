@@ -6,13 +6,13 @@ PRICE가 제일 비싼 PRODUCT_ID, PRODUCT_NAME, PRODUCT_CD, CATEGORY, PRICE를 
 각각 칼럼의 최댓값/최솟값을 반환하는 함수다.<br>
 - **기본 문법**
     ```sql
-    -- MIN
-    SELECT MIN(column_name)
-    FROM table_name
-    WHERE condition;
-    
     -- MAX
     SELECT MAX(column_name)
+    FROM table_name
+    WHERE condition;
+
+    -- MIN
+    SELECT MIN(column_name)
     FROM table_name
     WHERE condition;
     ```
@@ -31,7 +31,7 @@ PRICE가 제일 비싼 PRODUCT_ID, PRODUCT_NAME, PRODUCT_CD, CATEGORY, PRICE를 
 → MAX값을 구하고 또 비교를 하는 2번 방법보다 빠르지 않을까 싶다.<br>
 
 ### Reference
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/131115)
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/131115)<br>
 [SQL MIN() and MAX() Functions](https://www.w3schools.com/sql/sql_min_max.asp)<br>
 [MySQL MIN() and MAX() Functions](https://www.w3schools.com/mysql/mysql_min_max.asp)<br>
 [MySQL :: MySQL 8.0 Reference Manual :: 8.2.1.19 LIMIT Query Optimization](https://dev.mysql.com/doc/refman/8.0/en/limit-optimization.html)<br>
