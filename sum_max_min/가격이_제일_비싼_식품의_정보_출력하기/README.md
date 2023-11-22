@@ -3,7 +3,7 @@ FOOD_PRODUCT 테이블에서<br>
 PRICE가 제일 비싼 PRODUCT_ID, PRODUCT_NAME, PRODUCT_CD, CATEGORY, PRICE를 조회하는 SQL문 작성.<br>
 
 ### MAX/MIN
-각각 칼럼의 최댓값/최솟값을 가진 값을 반환하는 함수다.<br>
+각각 칼럼의 최댓값/최솟값을 반환하는 함수다.<br>
 - **기본 문법**
     ```sql
     -- MIN
