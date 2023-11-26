@@ -22,32 +22,6 @@ DAILY_FEE의 평균을 출력하는 SQL문 작성.<br>
     WHERE `order` = 10;  -- 예약어 포함.
     ```
 
-### AVG
-값이 숫자인 칼럼의 평균값을 반환한다.<br>
-
-<aside>
-💡 NULL은 무시된다.
-
-</aside>
-
-- **기본 문법**<br>
-    ```sql
-    SELECT AVG(column_name)
-    FROM table_name;
-    ```
-    
-- **예시**<br>
-    ```sql
-    -- Alias와 함께 사용하는 예시.
-    SELECT AVG(Price) AS `average price`
-    FROM Products;
-    
-    -- 평균보다 높은 걸 잡고 싶을 때.
-    --  서브 쿼리에 AVG 함수를 사용해 구할 수 있다.
-    SELECT * FROM Products
-    WHERE price > (SELECT AVG(price) FROM Products);
-    ```
-
 ### ROUND
 `MySQL`이 제공하는 함수로,<br>
 숫자를 특정 소수점 자리까지 반올림한다.<br>
