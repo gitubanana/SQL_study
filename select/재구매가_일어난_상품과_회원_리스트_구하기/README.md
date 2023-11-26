@@ -50,7 +50,7 @@ USER_ID와 PRODUCT_ID를 출력하는 SQL문을 작성<br>
     ```
 
 ### 그 외
-[COUNT](https://github.com/gitubanana/SQL_study/tree/main/select/%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%A7%9E%EB%8A%94_%ED%9A%8C%EC%9B%90%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0#count)<br>
+[COUNT](https://github.com/gitubanana/SQL_study/tree/main/sum_max_min#count)<br>
 [ORDER BY](https://github.com/gitubanana/SQL_study/blob/main/select/%EC%9D%B8%EA%B8%B0%EC%9E%88%EB%8A%94_%EC%95%84%EC%9D%B4%EC%8A%A4%ED%81%AC%EB%A6%BC/README.md#order-by)<br>
 
 ### Reference
