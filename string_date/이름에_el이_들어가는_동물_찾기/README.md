@@ -5,25 +5,25 @@ ANIMAL_TYPE이 'Dog'이고 NAME에 'el'이 들어가는 ANIMAL_ID와 NAME을 조
 단, 이름의 대소문자는 구분하지 않는다.<br>
 
 ### 새롭게 알게 된 점
-기본적으로, **`MySQL`**에서는 nonbinary string과 nonbinary string을 비교할 때는 대소문자 구분을 하지 않는다. (case-insensitive)<br>
+기본적으로, `MySQL`에서는 nonbinary string과 nonbinary string을 비교할 때는 대소문자 구분을 하지 않는다. (case-insensitive)<br>
 하지만, nonbinary string과 binary string을 비교하면 대소문자를 구분한다. (case-sensitive)<br>
 따라서, 대소문자를 구분하고 싶을 때는 피연산자 둘 중 하나에 `BINARY`를 붙여 binary string으로 만들면 대소문자를 구분하게 만들 수 있다.
 ```sql
 -- 대소문자 구분없이 비교
 SELECT NAME
     FROM ANIMAL_INS
-    WHERE NAME LIKE '%E%'
+    WHERE NAME LIKE '%E%';
 
 -- 대소문자 구분해서 비교
 SELECT NAME
     FROM ANIMAL_INS
-    WHERE NAME LIKE BINARY '%E%'
+    WHERE NAME LIKE BINARY '%E%';
 -- 혹은
 SELECT NAME
     FROM ANIMAL_INS
-    WHERE BINARY NAME LIKE '%E%'
+    WHERE BINARY NAME LIKE '%E%';
 ```
-하지만, **`Oracle`**에서는 기본적으로 대소문자를 구분한다.
+하지만, `Oracle`에서는 기본적으로 대소문자를 구분한다.
 따라서, 대소문자 구분을 안 하고 싶다면 `UPPER`/`LOWER`함수로 대문자/소문자로 바꿔서 비교를 해야 한다.
 
 ### Reference

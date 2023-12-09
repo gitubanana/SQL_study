@@ -79,23 +79,23 @@ FOOD_FACTORY 테이블에서 강원도에 위치한 FACTORY_ID, FACTORY_NAME, AD
     ```
 
 ### 새롭게 알게 된 점
-기본적으로, **`MySQL`**에서는 nonbinary string과 nonbinary string을 비교할 때는 대소문자 구분을 하지 않는다. (case-insensitive)<br>
+기본적으로, `MySQL`에서는 nonbinary string과 nonbinary string을 비교할 때는 대소문자 구분을 하지 않는다. (case-insensitive)<br>
 하지만, nonbinary string과 binary string을 비교하면 대소문자를 구분한다. (case-sensitive)<br>
 따라서, 대소문자를 구분하고 싶을 때는 피연산자 둘 중 하나에 `BINARY`를 붙여 binary string으로 만들면 대소문자를 구분하게 만들 수 있다.
 ```sql
 -- 대소문자 구분없이 비교
 SELECT NAME
     FROM ANIMAL_INS
-    WHERE NAME LIKE '%E%'
+    WHERE NAME LIKE '%E%';
 
 -- 대소문자 구분해서 비교
 SELECT NAME
     FROM ANIMAL_INS
-    WHERE NAME LIKE BINARY '%E%'
+    WHERE NAME LIKE BINARY '%E%';
 -- 혹은
 SELECT NAME
     FROM ANIMAL_INS
-    WHERE BINARY NAME LIKE '%E%'
+    WHERE BINARY NAME LIKE '%E%';
 ```
 
 
