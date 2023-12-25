@@ -22,6 +22,8 @@
     SELECT CONCAT("SQL ", NULL, "is ", "fun!") AS ConcatenatedString;
     -- NULL
     ```
+- **동작 환경**<br>
+    MySQL 4.0부터
 
 ### Reference
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/164671)<br>
