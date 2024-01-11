@@ -32,7 +32,7 @@
     FROM Orders
     RIGHT OUTER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
     
-    -- Left Outer Join(교집합 + 왼쪽, 오른쪽 테이블의 남은 부분)
+    -- Full Outer Join(교집합 + 왼쪽, 오른쪽 테이블의 남은 부분)
     SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
     FROM Orders
     FULL OUTER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
