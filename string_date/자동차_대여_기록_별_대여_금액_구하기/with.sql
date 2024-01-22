@@ -1,38 +1,24 @@
-SELECT HISTORY_ID,
-        ROUND((100 -
-               CASE
-                WHEN DURATION >= 90 THEN
-                    (
-                        SELECT DISCOUNT_RATE
-                            FROM CAR_RENTAL_COMPANY_DISCOUNT_PLAN 
-                            WHERE DURATION_TYPE = '90일 이상'
-                                AND CAR_TYPE = '트럭'
-                    )
-                WHEN DURATION >= 30 THEN
-                    (
-                        SELECT DISCOUNT_RATE
-                            FROM CAR_RENTAL_COMPANY_DISCOUNT_PLAN 
-                            WHERE DURATION_TYPE = '30일 이상'
-                                AND CAR_TYPE = '트럭'
-                    )
-                WHEN DURATION >= 7 THEN
-                    (
-                        SELECT DISCOUNT_RATE
-                            FROM CAR_RENTAL_COMPANY_DISCOUNT_PLAN 
-                            WHERE DURATION_TYPE = '7일 이상'
-                                AND CAR_TYPE = '트럭'
-                    )
-                ELSE 0
-            END) / 100 * DURATION * DAILY_FEE) AS FEE
-    FROM (
-        SELECT HISTORY_ID, CAR_ID,
-                DATEDIFF(END_DATE, START_DATE) + 1 AS DURATION
-            FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
-    ) AS HISTORY
-    INNER JOIN (
-                SELECT CAR_ID, DAILY_FEE
-                    FROM CAR_RENTAL_COMPANY_CAR
-                    WHERE CAR_TYPE = '트럭'
-                ) AS TRUCK
-        ON HISTORY.CAR_ID = TRUCK.CAR_ID
+WITH TRUCK_HISTORY (HISTORY_ID, DURATION, DAILY_FEE, DURATION_TYPE) AS
+(
+    SELECT HISTORY.HISTORY_ID,
+            DATEDIFF(HISTORY.END_DATE, HISTORY.START_DATE) + 1 AS DURATION,
+            CAR.DAILY_FEE,
+            CASE
+                WHEN DATEDIFF(HISTORY.END_DATE, HISTORY.START_DATE) + 1 >= 90 THEN '90일 이상'
+                WHEN DATEDIFF(HISTORY.END_DATE, HISTORY.START_DATE) + 1 >= 30 THEN '30일 이상'
+                WHEN DATEDIFF(HISTORY.END_DATE, HISTORY.START_DATE) + 1 >= 7 THEN '7일 이상'
+            END
+        FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY AS HISTORY
+        INNER JOIN CAR_RENTAL_COMPANY_CAR AS CAR
+            ON HISTORY.CAR_ID = CAR.CAR_ID
+        WHERE CAR.CAR_TYPE = '트럭'
+)
+
+SELECT TRUCK_HISTORY.HISTORY_ID AS HISTORY,
+        ROUND(TRUCK_HISTORY.DURATION * TRUCK_HISTORY.DAILY_FEE
+                * ((100 - IFNULL(PLAN.DISCOUNT_RATE, 0)) / 100)) AS FEE
+    FROM TRUCK_HISTORY
+    LEFT OUTER JOIN CAR_RENTAL_COMPANY_DISCOUNT_PLAN AS PLAN
+        ON TRUCK_HISTORY.DURATION_TYPE = PLAN.DURATION_TYPE
+            AND PLAN.CAR_TYPE = '트럭'
     ORDER BY FEE DESC, HISTORY_ID DESC;
