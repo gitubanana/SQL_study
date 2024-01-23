@@ -1,4 +1,8 @@
-### 문제를 해메서 만든 테케
+### 새로 알게 된 잡 기술
+`WHERE`는 ALIAS를 지원하지 않기 때문에, `HAVING`으로 해도 로직에 상관 없다면<br>
+`HAVING`에서 ALIAS를 사용해 가독성이 좋아질 수 있다.<br>
+
+### 문제를 해메서 만든 테스트케이스
 ```sql
 -- create a table
 CREATE TABLE CAR_RENTAL_COMPANY_CAR (
