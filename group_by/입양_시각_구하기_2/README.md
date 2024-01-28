@@ -6,3 +6,4 @@
 ### Reference
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/59413)<br>
 [WITH](https://github.com/gitubanana/SQL_study/tree/main/string_date/%EC%9E%90%EB%8F%99%EC%B0%A8_%EB%8C%80%EC%97%AC_%EA%B8%B0%EB%A1%9D_%EB%B3%84_%EB%8C%80%EC%97%AC_%EA%B8%88%EC%95%A1_%EA%B5%AC%ED%95%98%EA%B8%B0#with-common-table-expressions)<br>
+[Aggregate functions are not allowed in a recursive query. Is there an alternative way to write this query?](https://stackoverflow.com/questions/57299663/aggregate-functions-are-not-allowed-in-a-recursive-query-is-there-an-alternativ)<br>
