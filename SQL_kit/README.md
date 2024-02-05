@@ -1,0 +1,26 @@
+## Index
+| **배운 내용** | **간단 설명** |
+| --- | --- |
+| [JOIN](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/group_by/%EA%B0%80%EA%B2%A9%EB%8C%80_%EB%B3%84_%EC%83%81%ED%92%88_%EA%B0%9C%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0#cast) | 여러 테이블을 관련있는 칼럼에 기반해 합쳐 일시적인 행들의 집합 만드는 키워드 |
+| [WHERE](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/select/%EA%B0%95%EC%9B%90%EB%8F%84%EC%97%90_%EC%9C%84%EC%B9%98%ED%95%9C_%EC%83%9D%EC%82%B0%EA%B3%B5%EC%9E%A5_%EB%AA%A9%EB%A1%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0#where) | 특정 조건을 만족하는 행을 가져오는 키워드 |
+| [GROUP BY](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/select/%EC%9D%B8%EA%B8%B0%EC%9E%88%EB%8A%94_%EC%95%84%EC%9D%B4%EC%8A%A4%ED%81%AC%EB%A6%BC#order-by) | 같은 값을 가지고 있는 행을 그룹으로 묶어주는 키워드 |
+| [HAVING](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/select/%EC%9E%AC%EA%B5%AC%EB%A7%A4%EA%B0%80_%EC%9D%BC%EC%96%B4%EB%82%9C_%EC%83%81%ED%92%88%EA%B3%BC_%ED%9A%8C%EC%9B%90_%EB%A6%AC%EC%8A%A4%ED%8A%B8_%EA%B5%AC%ED%95%98%EA%B8%B0#group-by) | 특정 조건을 만족하는 그룹을 가져오는 키워드 |
+| [ORDER BY](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/select/%EC%9D%B8%EA%B8%B0%EC%9E%88%EB%8A%94_%EC%95%84%EC%9D%B4%EC%8A%A4%ED%81%AC%EB%A6%BC#order-by) | 결과를 정렬할 때 사용하는 키워드 |
+| [상위 N개 레코드 잡기](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/select/%EC%83%81%EC%9C%84_n%EA%B0%9C_%EB%A0%88%EC%BD%94%EB%93%9C#%EC%83%81%EC%9C%84-n-%EA%B0%9C-%EB%A0%88%EC%BD%94%EB%93%9C-%EC%9E%A1%EA%B8%B0) | 상위 N개 레코드 잡기 |
+| [CASE](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/string_date/%EC%9E%90%EB%8F%99%EC%B0%A8_%EB%8C%80%EC%97%AC_%EA%B8%B0%EB%A1%9D%EC%97%90%EC%84%9C_%EC%9E%A5%EA%B8%B0_%EB%8B%A8%EA%B8%B0_%EB%8C%80%EC%97%AC_%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0#datediff) | 조건문으로 값 지정하는 키워드 |
+| [WITH](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/string_date/%EC%9E%90%EB%8F%99%EC%B0%A8_%EB%8C%80%EC%97%AC_%EA%B8%B0%EB%A1%9D_%EB%B3%84_%EB%8C%80%EC%97%AC_%EA%B8%88%EC%95%A1_%EA%B5%AC%ED%95%98%EA%B8%B0#with-common-table-expressions) | 이름이 지정된 일시적인 결과 집합을 만들어주는 키워드 |
+| [UNION](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/select/%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8_%EC%98%A8%EB%9D%BC%EC%9D%B8_%ED%8C%90%EB%A7%A4_%EB%8D%B0%EC%9D%B4%ED%84%B0_%ED%86%B5%ED%95%A9%ED%95%98%EA%B8%B0) | 2개 이상의 SELECT 문의 결과를 합칠 때 사용하는 키워드 |
+| [집계 함수](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/sum_max_min#%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98aggregate-function) | MAX, MIN, COUNT, AVG, SUM |
+| [ROUND](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/select/%ED%8F%89%EA%B7%A0_%EC%9D%BC%EC%9D%BC_%EB%8C%80%EC%97%AC_%EC%9A%94%EA%B8%88_%EA%B5%AC%ED%95%98%EA%B8%B0#round) | 숫자를 특정 소수점 자리까지 반올림하는 함수 |
+| [Alias](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/select/12%EC%84%B8_%EC%9D%B4%ED%95%98%EC%9D%B8_%EC%97%AC%EC%9E%90_%ED%99%98%EC%9E%90_%EB%AA%A9%EB%A1%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0#alias) | 칼럼에 일시적인 이름 주는 키워드 |
+| [FLOOR](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/group_by/%EA%B0%80%EA%B2%A9%EB%8C%80_%EB%B3%84_%EC%83%81%ED%92%88_%EA%B0%9C%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0#floor) | 소수점을 내림한 정수를 반환하는 함수 |
+| [CAST](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/group_by/%EA%B0%80%EA%B2%A9%EB%8C%80_%EB%B3%84_%EC%83%81%ED%92%88_%EA%B0%9C%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0#cast) | 타입 변환하는 함수 |
+| [IFNULL](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/select/12%EC%84%B8_%EC%9D%B4%ED%95%98%EC%9D%B8_%EC%97%AC%EC%9E%90_%ED%99%98%EC%9E%90_%EB%AA%A9%EB%A1%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0#ifnull) | 어떤 값이 NULL이면 설정한 값으로 치환해주는 함수 |
+| [IS NULL](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/select/3%EC%9B%94%EC%97%90_%ED%83%9C%EC%96%B4%EB%82%9C_%EC%97%AC%EC%84%B1_%ED%9A%8C%EC%9B%90_%EB%AA%A9%EB%A1%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0#is-null) | NULL인지 확인할 때 사용하는 키워드 |
+| [DATE_FORMAT](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/select/%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%A7%9E%EB%8A%94_%EB%8F%84%EC%84%9C_%EB%A6%AC%EC%8A%A4%ED%8A%B8_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0#date_format) | 원하는 형식으로 날짜를 표현하는 함수 |
+| [YEAR/MONTH/DAY](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/select/%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%A7%9E%EB%8A%94_%EB%8F%84%EC%84%9C_%EB%A6%AC%EC%8A%A4%ED%8A%B8_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0#date_format) | 연도/월/일을 추출하는 함수 |
+| [DATEDIFF](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/string_date/%EC%9E%90%EB%8F%99%EC%B0%A8_%EB%8C%80%EC%97%AC_%EA%B8%B0%EB%A1%9D%EC%97%90%EC%84%9C_%EC%9E%A5%EA%B8%B0_%EB%8B%A8%EA%B8%B0_%EB%8C%80%EC%97%AC_%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0#datediff) | 두 DATE 사이의 일수를 반환하는 함수 |
+| [CONCAT](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/string_date/%EC%A1%B0%ED%9A%8C%EC%88%98%EA%B0%80_%EA%B0%80%EC%9E%A5_%EB%A7%8E%EC%9D%80_%EC%A4%91%EA%B3%A0%EA%B1%B0%EB%9E%98_%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%9D%98_%EC%B2%A8%EB%B6%80%ED%8C%8C%EC%9D%BC_%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0#concat) | 2개 이상의 값을 합쳐서 반환하는 함수 |
+| [SUBSTRING](https://github.com/gitubanana/SQL_study/tree/main/SQL_kit/string_date/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%84_%EC%83%81%ED%92%88_%EA%B0%9C%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0#substring) | 문자열에서 부분열 추출하는 함수 |
+
+
