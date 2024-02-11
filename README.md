@@ -9,6 +9,7 @@ ANSI/ISO 표준이지만, 다른 버젼의 SQL이 많이 있다. (ex : MySQL, Or
 - **SQL 키워드 대소문자**<br>
     SQL 키워드는 대소문자를 구분하지 않는다. (case insensitive)<br>
     `select` 와 `SELECT` 는 똑같다.<br>
+    (PostgreSQL은 구분한다고 한다)<br>
     
 - **세미콜론**<br>
     대부분의 DB 시스템에서 SQL문 마지막에 `;` 를 써야한다.<br>
