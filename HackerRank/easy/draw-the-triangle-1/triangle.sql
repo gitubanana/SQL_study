@@ -1,0 +1,11 @@
+WITH RECURSIVE P20(N) AS
+(
+    SELECT 20
+    UNION
+    SELECT N - 1
+        FROM P20
+        WHERE N > 0
+)
+
+SELECT REPEAT('* ', N)
+    FROM P20;
