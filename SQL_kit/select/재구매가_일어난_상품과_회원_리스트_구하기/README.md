@@ -28,7 +28,9 @@ USER_ID와 PRODUCT_ID를 출력하는 SQL문을 작성<br>
 ### HAVING
 집계 함수를 `WHERE`에서 사용할 수 없기 때문에 만들어졌다.<br>
 `WHERE` → 행별 필요한 데이터<br>
-`HAVING` → 그룹별(만약에 `GROUP BY` 가 없으면, 현재 잡힌 모든 행이 그룹이 된다.) 필요한 데이터<br>
+`HAVING` → 그룹별 필요한 데이터.<br>
+    만약에 `GROUP BY`가 없고 집계 함수를 사용한다면, 현재 잡힌 모든 행이 한 그룹이 된다.<br>
+    집계 함수를 사용하지 않을 때는, 칼럼의 alias를 사용해 코드를 깔끔하게 짤 수도 있다. (where에서는 alias를 사용하지 못하기 때문에)<br>
 - **기본 문법**<br>
     ```sql
     SELECT column_name(s)
@@ -47,6 +49,21 @@ USER_ID와 PRODUCT_ID를 출력하는 SQL문을 작성<br>
     -- CustomerID의 개수가 5보다 큰
     -- CustomerID의 개수와 Country를 가져온다.
     -- CustomerID 개수 내림차순으로
+    ```
+    ```sql
+    SELECT ID, SUM(PRICE)
+        FROM SAMPLE
+        HAVING ID IS NOT NULL;
+    -- ID와 PRICE의 합이 한 행으로 출력된다.
+    -- GROUP BY가 없고 집계함수를 사용하는데 -> HAVING을 사용했기 때문에, SAMPLE 테이블의 모든 행이 한 그룹이 되고, 거기서의 합과 가장 상단에 있는 ID를 가져온다.
+    ```
+    ```sql
+    SELECT ID, DATE_FORMAT(MADE_DATE, '%Y-%m-%d') AS DATE
+        FROM SAMPLE
+        HAVING DATE >= '2024-02-24';
+    -- ID와 DATE가 여러 행으로 출력된다.
+    -- GROUP BY가 없지만, 집계함수도 사용하지 않았기 때문에 -> ALIAS를 사용해 코드를 깔끔하게 짤 수 있다.
+    -- WHERE에서는 ALIAS 사용이 안 되기 때문에, 저 함수를 그대로 사용해 코드를 짜야 한다.
     ```
 
 ### 그 외

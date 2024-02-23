@@ -3,7 +3,7 @@ FOOD_FACTORY 테이블에서 강원도에 위치한 FACTORY_ID, FACTORY_NAME, AD
 결과는 FACTORY_ID를 기준으로 오름차순 정렬<br>
 
 ### WHERE
-특정 조건을 만족하는 행(record)을 가져올 때 사용한다.<br>
+특정 조건을 만족하는 행(row)을 가져올 때 사용한다.<br>
 - **기본 문법**<br>
     ```sql
     SELECT column1, column2, ...
