@@ -1,0 +1,11 @@
+WITH DISTINCT_SCORE AS (
+    SELECT DISTINCT score
+    FROM Scores
+)
+
+SELECT A.score, COUNT(*) AS `rank`
+FROM Scores AS A
+INNER JOIN DISTINCT_SCORE AS B
+    ON A.score <= B.score
+GROUP BY A.id
+ORDER BY A.score DESC;
